@@ -1,0 +1,313 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    font-family: Montserrat;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(https://fonts.googleapis.com/css2?);
+}
+.header{
+    background-image: url("images/hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 600px;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+button{
+    padding: 10px;
+    background-color: #23A5F0;
+    border: 0ch;
+    margin: 5px;
+}
+.nav_bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.navleft{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 50px;
+    width: 30%;
+}
+
+.links{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    gap: 10px;  
+}
+
+.navright{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.navright button{
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    height: 35px;
+}
+.pageintro{
+    text-align: center;
+    align-self: center;
+    width: 30%;
+    margin: 5%;
+}
+.pageintro h1{
+    font-size: 36px;
+    font-weight: bold;
+    box-shadow: #FAFAFA;
+}
+.pageintro button{
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    height: 35px;
+}
+.pageintro button:hover{
+    background-color: #23A5F0;
+}
+.insuranceoffer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: -50px 0 50px 0;
+    gap: 20px;
+}
+
+.offer{
+    box-sizing: border-box;
+    width: 300px;
+    padding: 25px;
+    background-color: white;
+}
+
+.offer:hover{
+    background-color: #23A5F0;
+    color: white;
+}
+
+.offer:hover .p{
+    color: beige;
+}
+
+.insuranceoffer2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    height: 300px;
+}
+
+.offer2{
+    width: 200px;
+    padding: 10px; 
+}
+
+.industry{
+    text-align: center;
+}
+.industry h2{
+    font-weight: bold;
+}
+.userreviews, .companypartners{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.companypartners{
+    justify-content: space-evenly;
+    width: 70%;
+    align-self: center;
+    margin-top: 200px;
+}
+
+.review{
+    width: 200px;
+    padding: 10px;
+    background-color: white;
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px rgb(219, 218, 218) solid;
+    text-align: center;
+    border-radius: 5px;
+    height: 400px;
+}
+
+.subscription{
+    background-image: linear-gradient(to right, blue, purple);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 70%;
+    align-self: center;
+    margin-top: 30px;
+    color: white;
+}
+
+.pricing{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.title{
+    text-align: center;
+}
+
+.subscriptionpackages, .location, .appointment, .consulting,
+.footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.package, .foot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.package ul{
+    list-style:none;
+}
+
+.package ul li::before {
+      content: "\2713"; /* checkmark unicode */
+      font-size: 1.5em; /* set the size of the checkmark */
+      color: white; /* set the color of the checkmark */
+      display: inline-block; /* display the checkmark inline */
+      width: 1.5em; /* set the width and height of the container */
+      height: 1.5em;
+      border-radius: 50%; /* make the container a circle */
+      background:green; /* set the background color of the container */
+      text-align: center; /* center the checkmark inside the container */
+      line-height: 1.5em; /* center the checkmark vertically inside the container */
+      margin-right: 0.5em; /* add some space between the bullet and the text */
+}
+  
+.location{
+    background-color: #252B43;
+    height: 400px;
+    padding: 30px;
+    color: white;
+}
+
+.branch{
+    width: 30%;
+}
+
+.appointment{
+    margin-top: -150px;
+    gap: 0;
+    width: 50%;
+    align-self: center;
+    height: 400px;
+}
+
+.appointment img{
+    width: 35%;
+}
+
+.appointment input{
+    background-color: rgb(235, 234, 233);
+    padding: 10px;
+    border: rgb(177, 176, 176);
+    border-radius: 5px;
+}
+
+.appointment select{
+    background-color: rgb(235, 234, 233);
+    padding: 10px;
+    border: rgb(177, 176, 176);
+    border-radius: 5px;
+}
+
+.appointment form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    padding: 20px;
+    width: 65%;
+}
+
+.appointment form button{
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.package{
+    border: 1px skyblue solid;
+    border-radius: 5px;
+    width: 33%;
+    background-color: white;  
+}
+
+.package:hover{
+    background-color: rgb(34, 34, 85);
+    color: white;
+    margin-top: -10px;
+}
+.package button{
+    background-color: #23A5F0;
+    color: white;
+    border-radius: 15px
+    padding: 15px;
+}
+.subscriptionpackages{
+    margin: 20px 0;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.consulting button{
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    height: 35px;
+}
+
+.consulting{
+    margin: 50px 0;
+}
+
+.foot a{
+    color: black;
+}
+.contact-info{
+    display: flex;
+    align-items: flex-start;
+}
+.contact-info ion-icon{
+    margin-left: 10px;
+}
+
+  
